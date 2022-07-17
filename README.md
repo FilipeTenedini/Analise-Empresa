@@ -20,3 +20,5 @@
 - Ranking de Lojas que mais venderam na empresa
 - De quais países vem a maior parte das vendas
 - Quais os 5 produtos mais vendidos
+
+# O projeto em .py está arquivo para melhor visualização do código.
