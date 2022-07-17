@@ -8,6 +8,7 @@
 - Lojas (306 linhas)
 - Clientes (39 mil linhas)
 
+### O que faremos neste projeto:
 - Abrir as 4 planilhas
 - Agrupar elas pelas informações em comum
 - Renomear colunas com nomes confusos
