@@ -2,7 +2,11 @@
 
 
 ### Da parte das planilhas e tratamento:
-- Iremos utilizar 4 planilhas: Vendas (980 mil linhas) / Cadastro produtos (1690 linhas) / Lojas (306 linhas) / Clientes (39 mil linhas)
+- Iremos utilizar 4 planilhas: 
+- Vendas (980 mil linhas)
+- Cadastro produtos (1690 linhas)
+- Lojas (306 linhas)
+- Clientes (39 mil linhas)
 
 - Abrir as 4 planilhas
 - Agrupar elas pelas informações em comum
