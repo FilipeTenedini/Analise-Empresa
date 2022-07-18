@@ -63,3 +63,20 @@ produto_ranking[:10].plot.barh(figsize=(8,6), stacked = True)
 print('índice baixíssimo de devoluções')
 
 
+#Mes que mais vende
+
+#transformando data da venda em data, de fato.
+vendas_df['Data da Venda'] = pd.to_datetime(vendas_df['Data da Venda'], format='%d/%m/%Y')
+
+#criando colunas de datas, dia, mes e ano
+vendas_df['Dia da Venda'] = vendas_df['Data da Venda'].dt.day
+vendas_df['Mes da Venda'] = vendas_df['Data da Venda'].dt.month
+vendas_df['Ano da Venda'] = vendas_df['Data da Venda'].dt.year
+
+#Transformando o dicionario no que eu quero e agrupando os meses.
+mesvendas_df = vendas_df[['Quantidade Vendida', 'Mes da Venda']]
+mesvendas_df = mesvendas_df.groupby(mesvendas_df['Mes da Venda']).sum()
+maxi = mesvendas_df['Quantidade Vendida'].max()
+mixi = mesvendas_df['Quantidade Vendida'].min()
+mesvendas_df.plot(yticks=range(mixi,maxi,100000), xticks=range(1, 13, 1))
+print('Percebemos que o melhor mês de vendas foi o mês 11 / Novembro. Com um volume de {} vendas'.format(maxi))
